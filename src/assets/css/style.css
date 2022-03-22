@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* estilos gerais da aplicação */
+
+* {
+    box-sizing: border-box;
+    --cor-fundo: #FFFFFF;
+    --cor-header: #C3CFD9;
+    --cor-footer: #DFE6ED;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    font-family: 'Roboto', sans-serif;
+}
