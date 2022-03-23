@@ -20,18 +20,20 @@ function MovieSelection(){
     }
 
     return (
-        <main className="movie-selection-page">
-            <div className="title-page">
-                <span className="title">Selecione o filme</span>
-            </div>
-            <div className="content">
-                <Link to={a}>
-                    <div className="container">
-                        <img src="" alt=""/>
-                    </div>
-                </Link>
-            </div>
-        </main>
+        <div className="Movies">
+            <main className="movie-selection-page">
+                <div className="title-page">
+                    <span className="title">Selecione o filme</span>
+                </div>
+                <div className="content">
+                    {/* <Link to={}> */}
+                        <div className="container">
+                            <img src="naoSeiAinda" alt=""/>
+                        </div>
+                    {/* </Link> */}
+                </div>
+            </main>
+        </div>
     )
 }
 
