@@ -1,21 +1,27 @@
-import {useState} from "react";
-import {Link} from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 import Loading from "../../assets/img/loading.svg";
 
 import "./Movie.css"
 
-function MovieSelection(){
-    const [movies, setMovies]= useState([]);
+function MovieSelection() {
+    const [movies, setMovies] = useState([]);
 
-    //Preencher o array de filmes com a API dos filmes que virao do axios
+    useEffect(() => {
+        const promise = axios.get("https://mock-api.driven.com.br/api/v5/cineflex/movies")
+        promise.then(response => {
+            setMovies(response);
+        })
+    }, []);
 
-    if(movies.length===0){
+    if (movies.length === 0) {
         return (
-           <div className="loading">
-                <img src={Loading}/>
+            <div className="loading">
+                <img src={Loading} />
                 <h1>Carregando...</h1>
-            </div> 
+            </div>
         )
     }
 
@@ -26,11 +32,13 @@ function MovieSelection(){
                     <span className="title">Selecione o filme</span>
                 </div>
                 <div className="content">
-                    {/* <Link to={}> */}
-                        <div className="container">
-                            <img src="naoSeiAinda" alt=""/>
-                        </div>
-                    {/* </Link> */}
+                    {movies.map(movie => (
+                        <Link to={`/sessions/${movie.id}`}>
+                            <div className="container">
+                                <img src={movie.posterURL} alt={movie.title} />
+                            </div>
+                        </Link>
+                    ))}
                 </div>
             </main>
         </div>
