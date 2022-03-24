@@ -1,40 +1,53 @@
 
-.Movie .movie-selection-page{
+.movie-selection-page {
     max-width: 375px;
-    height: 100%;
-    margin: auto;
-    padding: 70px;
+    height: 100vh;
+    padding-top: 67px;
 }
-.Movie .title-page{
+
+.title-page {
     width: 100%;
     height: 110px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Movie .title-page .title{
+
+.title-page .title {
     font-size: 24px;
     line-height: 28px;
+
+    letter-spacing: 0.04em;
+
     color: #293845;
 }
-.Movie .movie-selection-page .content{
+
+.movie-selection-page .content {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
+
     margin: 0 25px;
 }
-.Movie .movie-selection-page .content .container{
+
+.movie-selection-page .content .container {
     width: 145px;
-    height: 210px;
+    height: 209px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     margin-bottom: 11px;
+
     box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
+
     background-color: #fff;
 }
-.Movie .movie-selection-page .content .container img{
+
+.movie-selection-page .content .container img {
     width: 90%;
     height: 90%;
 }
