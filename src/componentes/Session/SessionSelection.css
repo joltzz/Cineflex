@@ -1,0 +1,67 @@
+
+.time-selection-page{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 120px;
+}
+.time-selection-page .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 120px;
+}
+
+.time-selection-page .content .container{
+    border-bottom: solid 1px #293845;
+    margin-bottom: 25px;
+}
+.time-selection-page .content .container .date{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 10px 25px;
+    border-top: solid 1px #293845;
+    color: #293845;
+}
+.time-selection-page .content .container .hours{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+.time-selection-page .content .container .hours .hours-box{
+    width: 83px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #e8833a;
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.Loading{
+    padding: 300px;
+
+}
+.Loading h1{
+    font-family: 'Roboto'sans-serif;
+}
+

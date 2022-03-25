@@ -19,7 +19,7 @@ function MovieSelection() {
 
     if (movies.length === 0) {
         return (
-            <div className="loading">
+            <div className="Loading">
                 <img src={Loading} alt=""/>
                 <h1>Carregando...</h1>
             </div>
