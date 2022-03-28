@@ -23,7 +23,7 @@ function App(){
                 <Route path="/" element={<MovieSelection/>}></Route>
                 <Route path="/sessions/:idMovie" element={<SessionSelection/>}></Route>
                 <Route path="/seats/:idSession" element={<SeatSelection confirmSend={updateMovieDetails}/>}></Route>
-                {/* <Route path="/receipt" element={<ReceiptPage confirmSend={movieDetails} />}></Route> */}
+                <Route path="/receipt" element={<ReceiptPage confirmSend={movieDetails} />}></Route>
             </Routes>
         </BrowserRouter>
     )

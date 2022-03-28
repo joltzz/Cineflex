@@ -75,7 +75,7 @@ function SeatSelected({ confirmSend }) {
         } else if (nome.length === 0) {
             alert("Digite o seu nome completo para prosseguir!");
         } else if (cpf.length !== 11) {
-            alert("Digite um CPF válido!");
+            alert("Digite um CPF válido com 11 números!");
         }
     }
 
@@ -84,7 +84,7 @@ function SeatSelected({ confirmSend }) {
         axios.post(`https://mock-api.driven.com.br/api/v5/cineflex/seats/book-many`, reserveSeats);
     }
 
-    const isFilled = reserveSeats.ids.length !== 0 && nome.length !== 0 && (!cpf.length !== 11);
+    const isFilled = reserveSeats.ids.length !== 0 && nome.length !== 0 && !(cpf.length !== 11);
 
     return (
         <main className="seat-selection-page">
@@ -133,7 +133,7 @@ function SeatSelected({ confirmSend }) {
                 </div>
             </div>
 
-            {isFilled === false
+            {isFilled === true
                 ? <Link to="/receipt">
                     <Button isFilled={isFilled} onClick={() => confirmation()}>
                         Reservar assento(s)

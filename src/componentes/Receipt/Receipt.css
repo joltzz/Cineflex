@@ -1,0 +1,51 @@
+
+.receipt-page {
+    max-width: 375px;
+    padding-top: 67px;
+}
+.receipt-page .title-page .title {
+    font-weight: 600;
+    color: #247A6B;
+}
+.receipt-page .content {
+    text-align: left;
+    letter-spacing: 0.04em;
+    color: #293845;
+}
+.receipt-page .content > div {
+    padding-bottom: 10px;
+}
+.receipt-page .content > div .title{
+    width: 100vh;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 28px;
+    border-top: solid 1px #293845;
+    padding: 10px 25px;
+    padding-bottom: 5px;
+}
+.receipt-page .content > div .data {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 26px;
+    padding: 0 25px;
+}
+.receipt-page .home-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px #293845;
+    padding-top: 70px;
+}
+.receipt-page .home-button button {
+    width: 225px;
+    height: 42px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #e8833a;
+    cursor: pointer;
+    margin-bottom: 150px;
+}
